@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #1c56a8;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.sub-contenedor {
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 5px rgb(53, 165, 230, 0.5);
+}
+
+.contenido {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: auto;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.title {
+    font-weight: bolder;  
+}
+
+.title img{
+    width: 25px;
+    position: relative;
+    right: -5px;
+    bottom: -5px;
+}
+
+.actions {
+   padding: 10px 0;
+   display: flex;
+   justify-content: end;
+   gap: 10px;
+}
+
+.actions button {
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-descargar {
+    background-color: #029be1;
+    border: none;
+    color: white;
+}
+
+.btn-descargar:hover {
+    background-color: #0280de;
+    
+}
+
+.btn-volver {
+    background-color: white;
+    border: solid 1px #ccc;
+}
+
+.btn-volver:hover {
+    background-color: #eee;
+}
+
+@media (max-width:733px) {
+    .sub-contenedor {
+        width: 80%;
+    }
+}
+
+@media (max-width:467px) {
+    .title img {
+        display: none;
+    }
+}
